@@ -1,4 +1,4 @@
-import projectData from "/data/data.js"; // Ensure this path is correct
+import projectData from "../data/data"; // Ensure this path is correct
 console.log(projectData);
 
 const nav = document.querySelector(".sidebar");
