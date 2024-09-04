@@ -11,7 +11,7 @@ menuIcon.addEventListener("click", () => {
 
 //cards 
 
-
+console.log("test")
 document.addEventListener('DOMContentLoaded', () => {
   const cardsWrapper = document.getElementById('cards-wrapper');
 
