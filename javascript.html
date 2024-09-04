@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title"><img src="/imgs/pink/aglogo.png" alt="" class="logo">ARCIEEXO</h1>
+
+        <button class="pink-menu">
+            <i class="fa fa-bars" style="color: #d69999;"></i>
+        </button>
+
+        <!-- Sidebar navigation -->
+        <div class="sidebar">
+            <a href="index.html">Home</a>
+            <a href="about.html" target="_blank">About</a>
+            <a href="javascript.html">Javascript</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://github.com/ArcieeX">
+                <i class="fa fa-brands fa-github fa-beat-fade"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arcieexo/">
+                <i class="fa fa-brands fa-linkedin fa-beat-fade" style="color: #e5aeae;"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-brands fa-insta fa-beat-fade" style="color:#e5aeae"></i>
+            </a>
+            <a href="/imgs/ag-resume.pdf" class="">
+                <i class="fa fa-file fa-beat-fade" style="color:#e5aeae">Resume</i>
+            </a>
+        </div>
+    </header>
+
+    <div class="js-hero">
+        <h2 class="js-h2">Javascript</h2>
+        <div class="js-cards">
+            <button class="js-card">
+                Madlib
+            </button>
+            <button class="js-card">
+                Current Time In Your Fav Place
+            </button>
+            <button id="toggleBtn" class="js-card">
+                Click to change to your fav color
+            </button>
+        </div>
+        <div id="hiddenDiv" class="display-none show-div">
+            <form id="form">
+                <!-- Form elements -->
+                <label for="selectColor">Choose a color:</label>
+                <select id="selectColor" name="selectColor">
+                    <option value="crimson">Red</option>
+                    <option value="green">Green</option>
+                    <option value="#0984e3">Blue</option>
+                    <option value="cyan">Cyan</option>
+                    <option value="#00b894">Mint Leaf</option>
+                    <option value="#e84393">Pink</option>
+                </select>
+
+                <label for="changeOption">Choose what to change:</label>
+                <select name="changeOption" id="changeOption">
+                    <option value="background">Background Color</option>
+                    <option value="text">Text Color</option>
+                </select>
+
+                <input type="submit" id="submitColorButton" value="Apply Color">
+            </form>
+
+            <div class="js-text">
+                <p id="colorText">You Are Beautiful!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-icons-wrapper">
+            <a href="" class="icons">
+                <i class="fa fa-brands fa-github" style="color: #dda6a6;"></i>
+            </a>
+            <a href="" class="icons">
+                <i class="fa fa-brands fa-linkedin" style="color: #e5aeae;"></i>
+            </a>
+            <a href="" class="icons">
+                <i class="fa fa-file"></i>
+            </a>
+        </div>
+        <p>&COPY; All rights reserved.</p>
+    </footer>
+    <script type="module" src="js/custom.js"></script>
+</body>
+
+</html>

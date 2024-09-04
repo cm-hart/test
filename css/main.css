@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+:root {
+    --mainfont: ;
+    --chocolate: #784935;
+    --redwood: #b36a5eff;
+    --tan: #DBA493;
+    --nude: #F5D0C5;
+    --peachy: #F2BAAF;
+    --coral: #ECA7A1;
+    --pink: #E99394;
+    --white: #fff;
+    --black: #000;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+/* Wrap entire page except header and footer in a div and give that display: grid */
+header {
+
+    height: 9rem;
+    background-color: var(--black);
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+h1 {
+    color: var(--white)
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    max-width: 100%;
+}
+.sidebar a {
+    text-decoration: none;
+    list-style: none;
+}
+.hero {
+    display: block;
+    background-image: url("/imgs/pink/pink-option2.jpg");
+    grid-row: 2/3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    Width: 100%;
+    height: 20rem;
+}
+
+.hero-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid var(--white);
+    top: 9rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    background-color: pink;
+    color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    align-self: center;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    max-width: 100%;
+    align-self: center;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 3s;
+}
+
+.content {
+    text-align: center;
+    background-color: pink;
+    color: black;
+    /* border-color: #DBA493; */
+    border: 1rem solid pink;
+    border-radius: 10%;
+    justify-content: center;
+}
+
+.content a {
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--pink);
+    padding: 0.2rem;
+    border-radius: 10px;
+    border: 0.2rem solid var(--nude);
+    cursor: pointer;
+}
+
+.content a:hover {
+    background-color: var(--white);
+    color: var(--pink);
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    right: 0;
+    left: 0;
+
+}
+
+.column {
+   
+    float: left;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.card {
+    box-shadow: 0 8px 8px 0;
+    padding: 3rem;
+}
+
+.container {
+    padding: 0 16px;
+    background-color: white;
+}
+
+.scroll i {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding: 2rem;
+}
+
+.scroll i:hover {
+    background-color: var(--chocolate);
+    /* border-width: 0; */
+    padding: 2rem;
+    border-style: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: var(--peachy);
+    height: 10rem;
+    text-align: center;
+    bottom: 0;
+}
+
+.footer-icons-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+/* ABOUT PAGE SECTION */
+.about-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: #fff;
+    color: var(--redwood);
+}
+
+.about {
+    grid-column: 2/3;
+}
+.about img {
+    max-width: 100%;
+}
+.about-container{
+    text-align: center;
+}
+
+/* JAVASCRIPT  PAGE SECTION */
+
+.js-hero {
+    background-image: url('/imgs/pink/pink-binary-code.jpg');
+    background-repeat: repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4rem;
+
+}
+
+.js-hero {
+
+    color: white;
+}
+
+.js-main #js-div {
+
+    color: black;
+}
+
+/* .js-none {
+    display: none;
+    
+} */
+.display-none {
+    display: none;
+}
+.show-div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+    color: black;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 3%;
+    
+}
+
+select#selectColor {
+
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    /* height: 5px; */
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 90%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+select#changeOption {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    /* height: 5px; */
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 90%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+.js-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.js-h2 {
+    color: white;
+    text-align: center;
+}
+
+.js-card {
+    padding: 2rem;
+    color: black;
+    background: pink;
+    max-width: 100%;
+    border-radius: 3%;
+}
+
+.js-card:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.js-text {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+
+/* CONTACT PAGE SECTION*/
+.main-contact {
+    /* margin: 2rem; */
+    padding: 1rem;
+    background-color: var(--nude);
+    color: #fff;
+    /* text-align: center; */
+}
+
+.contact-heading {
+    text-align: center;
+}
+
+.contact-form {
+    color: var(--pink);
+    background-color: white;
+}
+
+form {
+    max-width: 100%;
+    margin: 10px 1rem;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    color: var(--redwood);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 90%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    padding: 2rem;
+}
+
+.contact-btn {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: var(--tan);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid var(--rust);
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 30px;
+}
+
+.display-none {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .pink-menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .pink-menu i {
+        display: block;
+    }
+
+    /* Sidebar hidden by default on small screens */
+    .sidebar {
+        display: none; /* Only visible when .change is added */
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 2rem;
+        position: absolute;
+        top: 7.5rem; /* Adjust as needed */
+        left: 0;
+        right: 0;
+        background-color: black;
+        height: 100vh;
+        transition: left 0.3s ease;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .sidebar a {
+        color: pink;
+    }
+    .sidebar a:hover {
+        color: white;
+    }
+
+    /* Sidebar visible when .change class is applied */
+    .sidebar.change {
+        display: flex;
+    }
+}
+
+@media (min-width: 701px) {
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sidebar {
+        display: block; /* Visible on larger screens */
+        position: relative;
+        background-color: transparent;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding-left: 1.5rem;
+    }
+    .sidebar a {
+        color: var(--pink);
+        text-align: center;
+    }
+    .sidebar a:hover {
+        color: white;
+    }
+
+    .pink-menu {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .pink-menu i {
+        display: none;
+    }
+    .js-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+}
+@media (min-width: 1200px) {
+    header {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-left: 1rem;
+    }
+    
+}
